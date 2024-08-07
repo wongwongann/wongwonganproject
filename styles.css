@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #00bb25b8; /* Warna hover untuk logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Membuat elemen navigasi membungkus */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bb25b8; /* Warna hover untuk link navigasi */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container select,
+.search-container input,
+.search-container button {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-container select {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.search-container input {
+  background-color: #555;
+  color: #ffffff;
+}
+
+.search-container button {
+  background-color: #555;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #00bb25b8; /* Warna hover untuk tombol */
+  color: #000; /* Warna teks saat tombol di-hover */
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.filter-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #00bb25b8; /* Warna hover untuk tombol filter */
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+  text-align: center;
+  width: 250px; /* Atur lebar galeri item */
+  transition: transform 0.3s; /* Tambahkan transisi pada transform */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow pada gambar */
+  transition: transform 0.3s; /* Tambahkan transisi pada transform */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Perbesar galeri item saat hover */
+}
+
+.gallery-item p {
+  margin: 0;
+}
+
+.trending {
+  padding: 20px;
+}
+
+.trending h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trending-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trending-item {
+  margin: 10px;
+  text-align: center;
+  width: 150px; /* Atur lebar item trending */
+  transition: transform 0.3s; /* Tambahkan transisi pada transform */
+}
+
+.trending-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow pada gambar */
+  transition: transform 0.3s; /* Tambahkan transisi pada transform */
+}
+
+.trending-item:hover {
+  transform: scale(1.05); /* Perbesar item trending saat hover */
+}
+
+/* Select2 Dropdown Styling */
+.select2-container--default .select2-selection--single {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+  width: 150px; /* Batasi lebar dropdown */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+.select2-container--default .select2-results__option {
+  background-color: #444;
+  color: #fff;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+}
+
+.select2-dropdown {
+  background-color: #444; /* Warna latar belakang dropdown */
+  border: 1px solid #555; /* Warna border dropdown */
+  border-radius: 5px; /* Border radius dropdown */
+  color: #fff; /* Warna teks dropdown */
+}
+
+.select2-results__option--highlighted {
+  background-color: #00bcd4 !important; /* Warna latar belakang opsi saat di-hover */
+  color: #000 !important; /* Warna teks opsi saat di-hover */
+}
+
+.select2-selection__rendered {
+  background-color: #333; /* Warna latar belakang pilihan yang dipilih */
+  color: #fff; /* Warna teks pilihan yang dipilih */
+}
